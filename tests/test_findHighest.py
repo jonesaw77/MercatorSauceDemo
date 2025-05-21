@@ -23,7 +23,7 @@ def test_find_highest_price(browserInstance, test_list_item):
 
     totalPrice, highPrice = shop_page.add_highest_priced_item_to_cart()
 
-    print("Total in cart:", totalPrice)
+    print("Total in cart is:", totalPrice)
     print("Highest price found:", highPrice)
 
     assert totalPrice == highPrice, f"Expected {highPrice}, got {totalPrice}"
